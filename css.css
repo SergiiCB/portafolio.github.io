@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.profile-pic img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.social-links a img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    transition: transform 0.3s;
+}
+.social-links a img:hover {
+    transform: scale(1.1);
+}
+.language-selector select {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav ul li {
+    position: relative;
+}
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background-color 0.3s;
+}
+nav ul li a:hover {
+    background-color: #555;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+}
+nav ul ul li {
+    width: 200px;
+}
+nav ul ul li a {
+    padding: 10px 20px;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+.content.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

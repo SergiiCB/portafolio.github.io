@@ -1,64 +1,165 @@
 <!DOCTYPE html>
-<header>
-    <div class="header-content">
-        <div class="profile-pic">
-            <img src="ruta-a-tu-foto.jpg" alt="Mi Foto">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Sergi Cózar Badia</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        .profile-pic img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+        .social-links a img {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+            transition: transform 0.3s;
+        }
+        .social-links a img:hover {
+            transform: scale(1.1);
+        }
+        .language-selector select {
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+        }
+        nav ul ul li {
+            width: 200px;
+        }
+        nav ul ul li a {
+            padding: 10px 20px;
+        }
+        nav ul li:hover > ul {
+            display: block;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+        .content.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="profile-pic">
+                <img src="ruta-a-tu-foto.jpg" alt="Mi Foto">
+            </div>
+            <h1>Sergi Cózar Badia</h1>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/tuperfil" target="_blank">
+                    <img src="ruta-a-icono-linkedin.png" alt="LinkedIn">
+                </a>
+                <!-- Añadir más redes sociales aquí -->
+            </div>
+            <div class="language-selector">
+                <select id="language" onchange="changeLanguage()">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                    <option value="ca">Català</option>
+                </select>
+            </div>
         </div>
-        <h1>Web Moderna con Desplegables y Transiciones</h1>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/tuperfil" target="_blank">
-                <img src="ruta-a-icono-linkedin.png" alt="LinkedIn">
-            </a>
-            <!-- Añadir más redes sociales aquí -->
-        </div>
-        <div class="language-selector">
-            <select id="language" onchange="changeLanguage()">
-                <option value="es">Español</option>
-                <option value="en">English</option>
-                <option value="ca">Català</option>
-            </select>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li>
+                <a href="#">Proyectos</a>
+                <ul>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">Power BI</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Cursos</a>
+                <ul>
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <h2>Bienvenidos a mi Web</h2>
+            <p></p>
+            <p></p>
         </div>
     </div>
-</header>
-<nav>
-    <ul>
-        <li><a href="#">Inicio</a></li>
-        <li>
-            <a href="#">Servicios</a>
-            <ul>
-                <li><a href="#">Desarrollo Web</a></li>
-                <li><a href="#">Diseño Gráfico</a></li>
-                <li><a href="#">Marketing Digital</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="#">Nosotros</a>
-            <ul>
-                <li><a href="#">Equipo</a></li>
-                <li><a href="#">Historia</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Contacto</a></li>
-    </ul>
-</nav>
-<div class="container">
-    <div class="content">
-        <h2>Bienvenidos a Nuestra Web</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula erat in ligula convallis, sed hendrerit lorem sollicitudin. Donec scelerisque, ligula id egestas facilisis, est nunc faucibus est, eget bibendum metus sapien non eros.</p>
-        <p>Curabitur ac faucibus purus. Donec in purus quam. Integer fermentum, ligula sit amet aliquam posuere, metus velit suscipit massa, nec fermentum eros nunc at mauris. Proin sit amet purus quis arcu pharetra gravida.</p>
-    </div>
-</div>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        setTimeout(function() {
-            document.querySelector('.content').classList.add('visible');
-        }, 100);
-    });
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.querySelector('.content').classList.add('visible');
+            }, 100);
+        });
 
-    function changeLanguage() {
-        const language = document.getElementById('language').value;
-        alert('Idioma seleccionado: ' + language); // Aquí puedes añadir la lógica para cambiar el idioma del contenido.
-    }
-</script>
-
-
+        function changeLanguage() {
+            const language = document.getElementById('language').value;
+            alert('Idioma seleccionado: ' + language); // Aquí puedes añadir la lógica para cambiar el idioma del contenido.
+        }
+    </script>
+</body>
+</html>

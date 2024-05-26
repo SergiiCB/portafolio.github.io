@@ -3,163 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Sergi Cózar Badia</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
-        }
-        .profile-pic img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            border: 2px solid #fff;
-        }
-        .social-links a img {
-            width: 30px;
-            height: 30px;
-            margin-left: 10px;
-            transition: transform 0.3s;
-        }
-        .social-links a img:hover {
-            transform: scale(1.1);
-        }
-        .language-selector select {
-            padding: 5px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            background-color: #fff;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-        }
-        nav ul li {
-            position: relative;
-        }
-        nav ul li a {
-            display: block;
-            color: #fff;
-            text-decoration: none;
-            padding: 15px 20px;
-            transition: background-color 0.3s;
-        }
-        nav ul li a:hover {
-            background-color: #555;
-        }
-        nav ul ul {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #444;
-        }
-        nav ul ul li {
-            width: 200px;
-        }
-        nav ul ul li a {
-            padding: 10px 20px;
-        }
-        nav ul li:hover > ul {
-            display: block;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .content {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.5s, transform 0.5s;
-        }
-        .content.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+    <title>Portafolio de [Tu Nombre]</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <div class="profile-pic">
-                <img src="ruta-a-tu-foto.jpg" alt="Mi Foto">
+        <nav>
+            <div class="logo">[Tu Nombre]</div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="dropdown-container">
+                <a href="#">Idioma</a>
+                <ul class="dropdown">
+                    <li><a href="#" class="lang" data-lang="es">Español</a></li>
+                    <li><a href="#" class="lang" data-lang="en">Inglés</a></li>
+                    <li><a href="#" class="lang" data-lang="ca">Catalán</a></li>
+                </ul>
             </div>
-            <h1>Sergi Cózar Badia</h1>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/tuperfil" target="_blank">
-                    <img src="ruta-a-icono-linkedin.png" alt="LinkedIn">
-                </a>
-                <!-- Añadir más redes sociales aquí -->
-            </div>
-            <div class="language-selector">
-                <select id="language" onchange="changeLanguage()">
-                    <option value="es">Español</option>
-                    <option value="en">English</option>
-                    <option value="ca">Català</option>
-                </select>
-            </div>
-        </div>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li>
-                <a href="#">Proyectos</a>
-                <ul>
-                    <li><a href="#">Python</a></li>
-                    <li><a href="#">Java</a></li>
-                    <li><a href="#">Power BI</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Cursos</a>
-                <ul>
-                    <li><a href="#">A</a></li>
-                    <li><a href="#">B</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <div class="content">
-            <h2>Bienvenidos a mi Web</h2>
-            <p></p>
-            <p></p>
-        </div>
-    </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            setTimeout(function() {
-                document.querySelector('.content').classList.add('visible');
-            }, 100);
-        });
 
-        function changeLanguage() {
-            const language = document.getElementById('language').value;
-            alert('Idioma seleccionado: ' + language); // Aquí puedes añadir la lógica para cambiar el idioma del contenido.
-        }
-    </script>
+    <div class="social-sidebar">
+        <a href="https://github.com/tu-usuario" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/tu-usuario" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com/tu-usuario" target="_blank">Twitter</a>
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <img src="tu-imagen.jpg" alt="Tu Imagen" class="profile-pic">
+            <h1>Hola, soy [Tu Nombre]</h1>
+            <p>Desarrollador de Software | Especialista en [Tu Especialidad]</p>
+            <a href="#projects" class="btn">Ver Mis Proyectos</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Sobre Mí</h2>
+        <p>Breve descripción sobre ti, tu experiencia y tus habilidades.</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Proyectos</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <img src="proyecto1.jpg" alt="Proyecto 1" class="project-img">
+                <h3>Proyecto 1</h3>
+                <p>Descripción breve del proyecto.</p>
+            </div>
+            <div class="project-item">
+                <img src="proyecto2.jpg" alt="Proyecto 2" class="project-img">
+                <h3>Proyecto 2</h3>
+                <p>Descripción breve del proyecto.</p>
+            </div>
+            <!-- Más proyectos -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contacto</h2>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

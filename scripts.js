@@ -7,7 +7,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Cambiar idioma
 const translations = {
     es: {
         about: "Sobre Mí",

@@ -281,21 +281,58 @@ footer p {
     nav {
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
     }
 
     nav .logo {
         margin-bottom: 10px;
+        align-self: center;
     }
 
     nav .nav-links {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 10px;
         width: 100%;
+        justify-content: space-around;
+    }
+
+    nav .nav-links li {
+        flex: 1 1 auto;
         text-align: center;
     }
 
-    .dropdown-container {
+    nav .nav-links li a {
+        display: block;
         width: 100%;
+        padding: 10px;
+    }
+
+    .dropdown-container {
+        align-self: center;
+        margin-top: 10px;
+    }
+
+    .dropdown-container a {
+        display: inline-block;
+        padding: 10px 20px;
+    }
+
+    .dropdown-container .dropdown {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    .dropdown-container .dropdown li a {
+        display: block;
+        padding: 10px 20px;
         text-align: center;
+        background-color: #fff;
+        border: 1px solid #e1e1e1;
+        border-radius: 5px;
+        margin: 5px 0;
     }
 }

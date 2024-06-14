@@ -1,4 +1,3 @@
-/* Reseteo de estilos */
 * {
     margin: 0;
     padding: 0;
@@ -92,6 +91,7 @@ nav .dropdown {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     list-style: none;
+    z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
 }
 
 nav .dropdown li a {
@@ -269,4 +269,33 @@ footer {
 footer p {
     font-size: 14px;
     color: #6e6e73;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .logo {
+        margin-bottom: 10px;
+    }
+
+    nav .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-container {
+        width: 100%;
+        text-align: center;
+    }
 }

@@ -211,7 +211,7 @@ text-align: center;
 
 .projects .container {
     width: 100%;
-    max-width: 600px; /* Ajusta el tamaño máximo de la imagen */
+    max-width: 800px; /* Ajusta el tamaño máximo de la imagen */
     position: relative;
     margin: 0 auto;
 }
@@ -222,17 +222,17 @@ text-align: center;
 
 .projects .mySlides img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .projects .progress-bar {
-    width: 50%; /* Ajusta el ancho de la barra de progreso aquí */
+    width: 30%; /* Ajusta el ancho de la barra de progreso aquí */
     max-width: 300px; /* También puedes definir un ancho máximo */
     background-color: #ddd;
     border-radius: 5px;
     overflow: hidden;
     margin: 20px auto; /* Centra la barra de progreso horizontalmente */
-    height: 5px; /* Ajusta la altura de la barra de progreso */
+    height: 3px; /* Ajusta la altura de la barra de progreso */
 }
 
 .projects .progress {
@@ -240,7 +240,7 @@ text-align: center;
     width: 0;
     background-color: #555;
     border-radius: 5px;
-    animation: progress 5s linear infinite;
+    animation: progress 8s linear infinite;
 }
 
 @keyframes progress {

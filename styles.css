@@ -210,7 +210,8 @@ text-align: center;
 }
 
 .projects .container {
-    width: 50%;
+    width: 100%;
+    max-width: 600px; /* Ajusta el tamaño máximo de la imagen */
     position: relative;
     margin: 0 auto;
 }
@@ -258,10 +259,6 @@ text-align: center;
 @media screen and (max-width: 500px) {
     .projects .container {
         width: 100%;
-    }
-    .projects .prev,
-    .projects .next {
-        padding: 5px;
     }
 }
 

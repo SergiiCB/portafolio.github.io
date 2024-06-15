@@ -210,8 +210,8 @@ text-align: center;
 }
 
 .projects .container {
-    width: 100%;
-    max-width: 500px; /* Ajusta el tamaño máximo de la imagen */
+    width: 50%;
+    max-width: 200px; /* Ajusta el tamaño máximo de la imagen */
     position: relative;
     margin: 0 auto;
 }

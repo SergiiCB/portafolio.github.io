@@ -64,8 +64,8 @@ document.querySelectorAll('.lang').forEach(link => {
 });
 
 let slideIndex = 0;
-let slides = document.getElementsByClassName("mySlides");
-let progressBar = document.querySelector(".progress");
+const slides = document.getElementsByClassName("mySlides");
+const progressBar = document.querySelector(".progress");
 
 function showSlides() {
     for (let i = 0; i < slides.length; i++) {
@@ -77,7 +77,7 @@ function showSlides() {
     }
     slides[slideIndex - 1].style.display = "block";
     progressBar.style.animation = "none";
-    void progressBar.offsetWidth;
+    void progressBar.offsetWidth; // Reinicia la animación
     progressBar.style.animation = "progress 5s linear infinite";
     setTimeout(showSlides, 5000); // Cambia de imagen cada 5 segundos
 }

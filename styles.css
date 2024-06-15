@@ -194,46 +194,93 @@ social-sidebar a:hover {
     background-color: #005bb5;
 }
 
-.about, .projects, .contact {
+.projects {
     padding: 60px 40px;
     text-align: center;
 }
 
-.about h2, .projects h2, .contact h2 {
+.projects h2 {
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-.projects .project-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+.projects .container {
+    width: 50%;
+    position: relative;
+    margin: 0 auto; 
 }
 
-.projects .project-item {
-    background-color: white;
-    border: 1px solid #e1e1e1;
-    padding: 20px;
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+.projects .mySlides {
+    display: none;
 }
 
-.projects .project-item:hover {
-    transform: scale(1.05);
-}
-
-.project-img {
+.projects .mySlides img {
     width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    transition: transform 0.3s;
+    border-radius: 10px; 
 }
 
-.project-item:hover .project-img {
-    transform: scale(1.1);
+.projects .prev,
+.projects .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    border: solid #fff 2px;
+}
+
+.projects .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.projects .prev:hover,
+.projects .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.projects .elements {
+    text-align: center;
+    margin-top: 20px; /* Añadir margen superior */
+}
+
+.projects .quadrate {
+    cursor: pointer;
+    height: 4px;
+    width: 50px;
+    margin: 0 2px;
+    background-color: #717171;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border-radius: 2px;
+}
+
+.projects .active, 
+.projects .quadrate:hover {
+    background-color: #fff;
+}
+
+@media screen and (max-width:900px) {
+    .projects .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .projects .container {
+        width: 100%;
+    }
+    .projects .prev,
+    .projects .next {
+        padding: 5px;
+    }
 }
 
 .contact form {

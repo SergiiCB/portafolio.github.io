@@ -38,7 +38,7 @@
             <img src="tu-imagen.jpg" alt="Tu Imagen" class="profile-pic">
             <h1>Hola, soy Sergi</h1>
             <p>Data scientist | Especialista en Power BI, Python, Tableau, SQL, Java, RStudio</p>
-            <a href="#projects" class="btn">Ver Mis Proyectos</a>
+            <a href="#projects.html" class="btn">Ver Mis Proyectos</a>
         </div>
     </section>
 
@@ -47,20 +47,22 @@
         <p>Breve descripción sobre ti, tu experiencia y tus habilidades.</p>
     </section>
 
-    <section id="projects" class="projects">
+    <section class="projects">
         <h2>Proyectos</h2>
-        <div class="project-list">
-            <div class="project-item">
-                <img src="proyecto1.jpg" alt="Proyecto 1" class="project-img">
-                <h3>Proyecto 1</h3>
-                <p>Descripción breve del proyecto.</p>
+        <div class="carousel">
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide current-slide">
+                        <img class="carousel-image" src="proyecto1.jpg" alt="Proyecto 1">
+                    </li>
+                    <li class="carousel-slide">
+                        <img class="carousel-image" src="proyecto2.jpg" alt="Proyecto 2">
+                    </li>
+                    <!-- Añadir más imágenes de proyectos aquí -->
+                </ul>
             </div>
-            <div class="project-item">
-                <img src="proyecto2.jpg" alt="Proyecto 2" class="project-img">
-                <h3>Proyecto 2</h3>
-                <p>Descripción breve del proyecto.</p>
-            </div>
-            <!-- Más proyectos -->
+            <button class="carousel-button carousel-button-left">&lt;</button>
+            <button class="carousel-button carousel-button-right">&gt;</button>
         </div>
     </section>
 

@@ -194,6 +194,11 @@ social-sidebar a:hover {
     background-color: #005bb5;
 }
 
+.about, .projects, .contact {
+padding: 60px 40px;
+text-align: center;
+}
+
 .projects {
     padding: 60px 40px;
     text-align: center;

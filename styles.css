@@ -290,27 +290,24 @@ footer p {
     }
 
     nav .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex: 2;
-}
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+        justify-content: space-around;
+    }
 
-nav .nav-links li {
-    position: relative;
-}
+    nav .nav-links li {
+        flex: 1 1 auto;
+        text-align: center;
+    }
 
-nav .nav-links li a {
-    text-decoration: none;
-    color: #1d1d1f;
-    font-size: 16px;
-    background-color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: box-shadow 0.3s, transform 0.3s;
-}
+    nav .nav-links li a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
 
     .dropdown-container {
         align-self: center;

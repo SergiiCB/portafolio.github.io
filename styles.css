@@ -195,8 +195,8 @@ social-sidebar a:hover {
 }
 
 .about, .projects, .contact {
-padding: 60px 40px;
-text-align: center;
+    padding: 60px 40px;
+    text-align: center;
 }
 
 .projects {
@@ -210,8 +210,8 @@ text-align: center;
 }
 
 .projects .container {
-    width: 50%;
-    max-width: 200px; /* Ajusta el tamaño máximo de la imagen */
+    width: 100%;
+    max-width: 400px; /* Ajusta el tamaño máximo del contenedor para la imagen */
     position: relative;
     margin: 0 auto;
 }
@@ -222,17 +222,18 @@ text-align: center;
 
 .projects .mySlides img {
     width: 100%;
-    border-radius: 20px;
+    height: auto; /* Asegura que la imagen mantenga su proporción */
+    border-radius: 20px; /* Ajusta el radio de las esquinas aquí */
 }
 
 .projects .progress-bar {
     width: 50%; /* Ajusta el ancho de la barra de progreso aquí */
-    max-width: 100px; /* También puedes definir un ancho máximo */
+    max-width: 300px; /* También puedes definir un ancho máximo */
     background-color: #ddd;
     border-radius: 5px;
     overflow: hidden;
     margin: 20px auto; /* Centra la barra de progreso horizontalmente */
-    height: 3px; /* Ajusta la altura de la barra de progreso */
+    height: 10px; /* Ajusta la altura de la barra de progreso */
 }
 
 .projects .progress {

@@ -1,4 +1,3 @@
-// Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -8,7 +7,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Translations
 const translations = {
     es: {
         about: "Sobre Mí",
@@ -65,41 +63,29 @@ document.querySelectorAll('.lang').forEach(link => {
     });
 });
 
-// Carousel functionality
-const track = document.querySelector('.carousel-track');
-const slides = Array.from(track.children);
-const nextButton = document.querySelector('.carousel-button-right');
-const prevButton = document.querySelector('.carousel-button-left');
-const slideWidth = slides[0].getBoundingClientRect().width;
+let slideIndex = 1;
+showSlides(slideIndex);
 
-// Arrange the slides next to one another
-const setSlidePosition = (slide, index) => {
-    slide.style.left = slideWidth * index + 'px';
-};
-slides.forEach(setSlidePosition);
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
 
-const moveToSlide = (track, currentSlide, targetSlide) => {
-    track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
-    currentSlide.classList.remove('current-slide');
-    targetSlide.classList.add('current-slide');
-};
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
-// When I click left, move slides to the left
-prevButton.addEventListener('click', e => {
-    const currentSlide = track.querySelector('.current-slide');
-    const prevSlide = currentSlide.previousElementSibling;
-
-    if (prevSlide) {
-        moveToSlide(track, currentSlide, prevSlide);
+function showSlides(n) {
+    let i;
+    let slides = document.querySelectorAll(".mySlides");
+    let quadrates = document.querySelectorAll(".quadrate");
+    if (n > slides.length) slideIndex = 1;
+    if (n < 1) slideIndex = slides.length;
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-});
-
-// When I click right, move slides to the right
-nextButton.addEventListener('click', e => {
-    const currentSlide = track.querySelector('.current-slide');
-    const nextSlide = currentSlide.nextElementSibling;
-
-    if (nextSlide) {
-        moveToSlide(track, currentSlide, nextSlide);
+    for (i = 0; i < quadrates.length; i++) {
+        quadrates[i].className = quadrates[i].className.replace(" active", "");
     }
-});
+    slides[slideIndex - 1].style.display = "block";
+    quadrates[slideIndex - 1].className += " active";
+}

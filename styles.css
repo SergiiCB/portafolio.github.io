@@ -18,6 +18,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 10;
 }
 
 nav {
@@ -25,6 +27,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: relative;
+    z-index: 10;
 }
 
 nav .logo {
@@ -91,7 +95,7 @@ nav .dropdown {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     list-style: none;
-    z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
+    z-index: 20; 
 }
 
 nav .dropdown li a {
@@ -116,6 +120,7 @@ nav .dropdown li a {
     flex-direction: column;
     gap: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 30;
 }
 
 .social-sidebar a {
@@ -141,6 +146,7 @@ social-sidebar a:hover {
     color: white;
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 
 .hero-content {

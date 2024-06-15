@@ -232,7 +232,7 @@ text-align: center;
     border-radius: 5px;
     overflow: hidden;
     margin: 20px auto; /* Centra la barra de progreso horizontalmente */
-    height: 10px; /* Ajusta la altura de la barra de progreso */
+    height: 5px; /* Ajusta la altura de la barra de progreso */
 }
 
 .projects .progress {

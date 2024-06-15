@@ -49,21 +49,26 @@
 
     <section class="projects">
         <h2>Proyectos</h2>
-        <div class="carousel">
-            <div class="carousel-track-container">
-                <ul class="carousel-track">
-                    <li class="carousel-slide current-slide">
-                        <img class="carousel-image" src="project1.jpg" alt="Proyecto 1">
-                    </li>
-                    <li class="carousel-slide">
-                        <img class="carousel-image" src="project2.jpg" alt="Proyecto 2">
-                    </li>
-                    <!-- Añadir más imágenes de proyectos aquí -->
-                </ul>
-            </div>
-            <button class="carousel-button carousel-button-left">&lt;</button>
-            <button class="carousel-button carousel-button-right">&gt;</button>
+        <div class="container">
+        <div class="mySlides">
+            <img src="project1.jpg" alt="image-1">
         </div>
+        <div class="mySlides">
+            <img src="project2.jpg" alt="">
+        </div>
+        <div class="mySlides">
+            <img src="project3.jpg" alt="">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="elements">
+            <span class="quadrate" onclick="currentSlide(1)"></span>
+            <span class="quadrate" onclick="currentSlide(2)"></span>
+            <span class="quadrate" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
     </section>
 
     <section id="contact" class="contact">

@@ -212,7 +212,7 @@ text-align: center;
 .projects .container {
     width: 50%;
     position: relative;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .projects .mySlides {
@@ -221,64 +221,41 @@ text-align: center;
 
 .projects .mySlides img {
     width: 100%;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 
-.projects .prev,
-.projects .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    border: solid #fff 2px;
+.projects .progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
 }
 
-.projects .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+.projects .progress {
+    height: 10px;
+    width: 0;
+    background-color: #555;
+    border-radius: 5px;
+    animation: progress 5s linear infinite;
 }
 
-.projects .prev:hover,
-.projects .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+@keyframes progress {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 
-.projects .elements {
-    text-align: center;
-    margin-top: 20px; /* Añadir margen superior */
-}
-
-.projects .quadrate {
-    cursor: pointer;
-    height: 4px;
-    width: 50px;
-    margin: 0 2px;
-    background-color: #717171;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    border-radius: 2px;
-}
-
-.projects .active, 
-.projects .quadrate:hover {
-    background-color: #fff;
-}
-
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
     .projects .container {
         width: 100%;
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
     .projects .container {
         width: 100%;
     }

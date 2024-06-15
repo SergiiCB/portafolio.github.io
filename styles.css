@@ -211,7 +211,7 @@ text-align: center;
 
 .projects .container {
     width: 100%;
-    max-width: 400px; /* Ajusta el tamaño máximo de la imagen */
+    max-width: 600px; /* Ajusta el tamaño máximo de la imagen */
     position: relative;
     margin: 0 auto;
 }
@@ -226,16 +226,17 @@ text-align: center;
 }
 
 .projects .progress-bar {
-    width: 100%;
-    max-width: 200px;
+    width: 50%; /* Ajusta el ancho de la barra de progreso aquí */
+    max-width: 300px; /* También puedes definir un ancho máximo */
     background-color: #ddd;
     border-radius: 5px;
     overflow: hidden;
-    margin-top: 20px;
+    margin: 20px auto; /* Centra la barra de progreso horizontalmente */
+    height: 10px; /* Ajusta la altura de la barra de progreso */
 }
 
 .projects .progress {
-    height: 10px;
+    height: 100%; /* Asegura que la altura de la barra de progreso llene completamente el contenedor */
     width: 0;
     background-color: #555;
     border-radius: 5px;

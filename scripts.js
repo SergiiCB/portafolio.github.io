@@ -76,10 +76,14 @@ function showSlides() {
         slideIndex = 1;
     }
     slides[slideIndex - 1].style.display = "block";
+    resetProgressBar();
+    setTimeout(showSlides, 5000); // Cambia de imagen cada 5 segundos
+}
+
+function resetProgressBar() {
     progressBar.style.animation = "none";
     void progressBar.offsetWidth; // Reinicia la animación
     progressBar.style.animation = "progress 5s linear infinite";
-    setTimeout(showSlides, 5000); // Cambia de imagen cada 5 segundos
 }
 
 document.addEventListener("DOMContentLoaded", function () {

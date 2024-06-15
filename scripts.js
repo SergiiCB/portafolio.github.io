@@ -63,29 +63,25 @@ document.querySelectorAll('.lang').forEach(link => {
     });
 });
 
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideIndex = 0;
+let slides = document.getElementsByClassName("mySlides");
+let progressBar = document.querySelector(".progress");
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    let i;
-    let slides = document.querySelectorAll(".mySlides");
-    let quadrates = document.querySelectorAll(".quadrate");
-    if (n > slides.length) slideIndex = 1;
-    if (n < 1) slideIndex = slides.length;
-    for (i = 0; i < slides.length; i++) {
+function showSlides() {
+    for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    for (i = 0; i < quadrates.length; i++) {
-        quadrates[i].className = quadrates[i].className.replace(" active", "");
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
     }
     slides[slideIndex - 1].style.display = "block";
-    quadrates[slideIndex - 1].className += " active";
+    progressBar.style.animation = "none";
+    void progressBar.offsetWidth;
+    progressBar.style.animation = "progress 5s linear infinite";
+    setTimeout(showSlides, 5000); // Cambia de imagen cada 5 segundos
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    showSlides();
+});

@@ -1,3 +1,7 @@
+/* Estilos específicos para la página principal */
+
+/* Selecciona todos los elementos y aplica márgenes y padding de 0, 
+   establece el tamaño de la caja como border-box y define la familia de fuentes predeterminada */
 * {
     margin: 0;
     padding: 0;
@@ -5,12 +9,14 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+/* Estilo del cuerpo del documento: color de fondo, color de texto y sin scroll horizontal */
 body {
     background-color: #f5f5f7;
     color: #1d1d1f;
     overflow-x: hidden;
 }
 
+/* Estilo del encabezado: color de fondo, borde inferior, padding y disposición flex */
 header {
     background-color: #fff;
     border-bottom: 1px solid #e1e1e1;
@@ -22,6 +28,7 @@ header {
     z-index: 10;
 }
 
+/* Estilo del nav: disposición flex y posicionamiento relativo */
 nav {
     display: flex;
     justify-content: space-between;
@@ -31,12 +38,14 @@ nav {
     z-index: 10;
 }
 
+/* Estilo de la clase logo dentro del nav: tamaño de fuente y peso */
 nav .logo {
     font-size: 24px;
     font-weight: bold;
     flex: 1;
 }
 
+/* Estilo de la lista de enlaces de navegación: sin estilo de lista, disposición flex y separación */
 nav .nav-links {
     list-style: none;
     display: flex;
@@ -45,10 +54,12 @@ nav .nav-links {
     flex: 2;
 }
 
+/* Estilo de los elementos de la lista de enlaces de navegación: posicionamiento relativo */
 nav .nav-links li {
     position: relative;
 }
 
+/* Estilo de los enlaces dentro de los elementos de la lista de enlaces de navegación */
 nav .nav-links li a {
     text-decoration: none;
     color: #1d1d1f;
@@ -60,17 +71,20 @@ nav .nav-links li a {
     transition: box-shadow 0.3s, transform 0.3s;
 }
 
+/* Efecto hover para los enlaces de navegación */
 nav .nav-links li a:hover {
     box-shadow: 0 6px 8px rgba(0,0,0,0.2);
     transform: translateY(-2px);
 }
 
+/* Estilo del contenedor de dropdown: posicionamiento relativo y alineación a la derecha */
 .dropdown-container {
     position: relative;
     flex: 1;
     text-align: right;
 }
 
+/* Estilo de los enlaces dentro del contenedor de dropdown */
 .dropdown-container a {
     text-decoration: none;
     color: #1d1d1f;
@@ -82,11 +96,13 @@ nav .nav-links li a:hover {
     transition: box-shadow 0.3s, transform 0.3s;
 }
 
+/* Efecto hover para los enlaces dentro del contenedor de dropdown */
 .dropdown-container a:hover {
     box-shadow: 0 6px 8px rgba(0,0,0,0.2);
     transform: translateY(-2px);
 }
 
+/* Estilo del menú desplegable dentro del nav: inicialmente oculto y con sombra */
 nav .dropdown {
     display: none;
     position: absolute;
@@ -98,16 +114,19 @@ nav .dropdown {
     z-index: 20; 
 }
 
+/* Estilo de los enlaces dentro del menú desplegable */
 nav .dropdown li a {
     padding: 10px 20px;
     display: block;
     color: #1d1d1f;
 }
 
+/* Muestra el menú desplegable cuando se hace hover en el contenedor de dropdown */
 .dropdown-container:hover .dropdown {
     display: block;
 }
 
+/* Estilo de la barra lateral de redes sociales: fija, centrada verticalmente y con sombra */
 .social-sidebar {
     position: fixed;
     top: 50%;
@@ -123,6 +142,7 @@ nav .dropdown li a {
     z-index: 30;
 }
 
+/* Estilo de los enlaces dentro de la barra lateral de redes sociales */
 .social-sidebar a {
     text-decoration: none;
     color: #1d1d1f;
@@ -131,11 +151,13 @@ nav .dropdown li a {
     transition: background-color 0.3s;
 }
 
-social-sidebar a:hover {
+/* Efecto hover para los enlaces dentro de la barra lateral de redes sociales */
+.social-sidebar a:hover {
     background-color: #007aff;
     color: white;
 }
 
+/* Estilo de la sección hero: color de fondo, altura, disposición flex y centrado del contenido */
 .hero {
     background-color: #f5f5f7;
     height: 80vh;
@@ -149,11 +171,13 @@ social-sidebar a:hover {
     z-index: 1;
 }
 
+/* Estilo del contenido dentro de la sección hero */
 .hero-content {
     position: relative;
     z-index: 2;
 }
 
+/* Estilo de la superposición oscura sobre la sección hero */
 .hero::after {
     content: '';
     position: absolute;
@@ -164,6 +188,7 @@ social-sidebar a:hover {
     background: rgba(0, 0, 0, 0.3);
 }
 
+/* Estilo de la imagen de perfil dentro de la sección hero */
 .profile-pic {
     width: 150px;
     height: 150px;
@@ -171,16 +196,19 @@ social-sidebar a:hover {
     margin-bottom: 20px;
 }
 
+/* Estilo del título dentro de la sección hero */
 .hero-content h1 {
     font-size: 48px;
     margin-bottom: 20px;
 }
 
+/* Estilo del párrafo dentro de la sección hero */
 .hero-content p {
     font-size: 24px;
     margin-bottom: 40px;
 }
 
+/* Estilo del botón dentro de la sección hero */
 .hero .btn {
     background-color: #007aff;
     color: white;
@@ -190,60 +218,70 @@ social-sidebar a:hover {
     transition: background-color 0.3s;
 }
 
+/* Efecto hover para el botón dentro de la sección hero */
 .hero .btn:hover {
     background-color: #005bb5;
 }
 
+/* Estilo para las secciones about, projects y contact: padding y centrado del texto */
 .about, .projects, .contact {
     padding: 60px 40px;
     text-align: center;
 }
 
+/* Estilo para la sección projects: padding y centrado del texto */
 .projects {
     padding: 60px 40px;
     text-align: center;
 }
 
+/* Estilo del título dentro de la sección projects */
 .projects h2 {
     font-size: 36px;
     margin-bottom: 20px;
 }
 
+/* Estilo del contenedor dentro de la sección projects */
 .projects .container {
     width: 100%;
-    max-width: 400px; /* Ajusta el tamaño máximo del contenedor para la imagen */
+    max-width: 400px; 
     position: relative;
     margin: 0 auto;
 }
 
+/* Estilo de las diapositivas dentro de la sección projects */
 .projects .mySlides {
     display: none;
 }
 
+/* Estilo de las imágenes dentro de las diapositivas en la sección projects */
 .projects .mySlides img {
     width: 100%;
-    height: auto; /* Asegura que la imagen mantenga su proporción */
-    border-radius: 20px; /* Ajusta el radio de las esquinas aquí */
+    height: auto; 
+    border-radius: 20px; 
 }
 
+/* Estilo de la barra de progreso dentro de la sección projects */
 .projects .progress-bar {
-    width: 50%; /* Ajusta el ancho de la barra de progreso aquí */
-    max-width: 300px; /* También puedes definir un ancho máximo */
+    width: 50%; 
+    max-width: 300px; 
     background-color: #ddd;
     border-radius: 5px;
     overflow: hidden;
-    margin: 20px auto; /* Centra la barra de progreso horizontalmente */
-    height: 10px; /* Ajusta la altura de la barra de progreso */
+    margin: 20px auto; 
+    height: 10px; 
 }
 
+/* Estilo de la barra de progreso dentro de la barra de progreso en la sección projects */
 .projects .progress {
-    height: 100%; /* Asegura que la altura de la barra de progreso llene completamente el contenedor */
+    height: 100%; 
     width: 0;
     background-color: #555;
     border-radius: 5px;
     animation: progress 8s linear infinite;
 }
 
+/* Definición de la animación de la barra de progreso */
 @keyframes progress {
     from {
         width: 0;
@@ -253,18 +291,21 @@ social-sidebar a:hover {
     }
 }
 
+/* Estilos responsivos para pantallas con ancho máximo de 900px */
 @media screen and (max-width: 900px) {
     .projects .container {
         width: 100%;
     }
 }
 
+/* Estilos responsivos para pantallas con ancho máximo de 500px */
 @media screen and (max-width: 500px) {
     .projects .container {
         width: 100%;
     }
 }
 
+/* Estilo del formulario dentro de la sección contact: disposición flex, dirección de columna y centrado */
 .contact form {
     display: flex;
     flex-direction: column;
@@ -272,6 +313,7 @@ social-sidebar a:hover {
     gap: 10px;
 }
 
+/* Estilo de los inputs y textarea dentro de la sección contact */
 .contact input, .contact textarea {
     width: 100%;
     max-width: 500px;
@@ -280,6 +322,7 @@ social-sidebar a:hover {
     border-radius: 5px;
 }
 
+/* Estilo del botón dentro de la sección contact */
 .contact button {
     background-color: #007aff;
     color: white;
@@ -290,10 +333,12 @@ social-sidebar a:hover {
     transition: background-color 0.3s;
 }
 
+/* Efecto hover para el botón dentro de la sección contact */
 .contact button:hover {
     background-color: #005bb5;
 }
 
+/* Estilo del pie de página: color de fondo, centrado del texto, padding y borde superior */
 footer {
     background-color: #f5f5f7;
     text-align: center;
@@ -301,12 +346,13 @@ footer {
     border-top: 1px solid #e1e1e1;
 }
 
+/* Estilo del párrafo dentro del pie de página */
 footer p {
     font-size: 14px;
     color: #6e6e73;
 }
 
-/* Estilos para móviles */
+/* Estilos responsivos para pantallas con ancho máximo de 768px */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -371,3 +417,63 @@ footer p {
         margin: 5px 0;
     }
 }
+
+/* Estilos específicos para la página de proyectos detallados */
+
+.detailed-projects {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.detailed-projects h1, .detailed-projects h2 {
+    text-align: left;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.detailed-projects h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.detailed-projects h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.detailed-projects .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.detailed-projects .project-item {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.333% - 40px);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.detailed-projects .project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.detailed-projects .project-item h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.detailed-projects .project-item p {
+    font-size: 16px;
+    color: #6e6e73;
+}
+
+
+

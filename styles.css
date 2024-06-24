@@ -475,5 +475,47 @@ footer p {
     color: #6e6e73;
 }
 
+/* Nueva sección de herramientas */
 
+.tools-section {
+    background-color: #e1e1e1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.tools-section .content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tools-section h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.tools-section .tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tools-section .tool-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    text-align: center;
+}
+
+.tools-section .tool-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.tools-section .tool-item p {
+    font-size: 14px;
+    margin: 0;
+}
 

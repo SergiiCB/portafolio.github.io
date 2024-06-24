@@ -425,6 +425,11 @@ footer p {
     text-align: center;
 }
 
+.detailed-projects {
+    padding: 60px 40px;
+    text-align: center;
+}
+
 .logo-container {
     display: flex;
     align-items: center;

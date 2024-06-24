@@ -98,7 +98,7 @@ nav .nav-links li a:hover {
 
 /* Efecto hover para los enlaces dentro del contenedor de dropdown */
 .dropdown-container a:hover {
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.2);
     transform: translateY(-2px);
 }
 

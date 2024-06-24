@@ -420,6 +420,30 @@ footer p {
 
 /* Estilos específicos para la página de proyectos detallados */
 
+/* Centrar el título "Proyectos" */
+.center-title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo para la imagen del logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    border-radius: 50%;
+    width: 40px; /* Ajusta el tamaño según sea necesario */
+    height: 40px; /* Ajusta el tamaño según sea necesario */
+    margin-right: 10px;
+}
+
+/* Quitar subrayado del texto "Mi Portfolio" */
+.no-underline {
+    text-decoration: none;
+}
+
 .detailed-projects {
     padding: 60px 40px;
     text-align: center;

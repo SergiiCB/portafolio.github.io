@@ -63,6 +63,43 @@ document.querySelectorAll('.lang').forEach(link => {
     });
 });
 
+// Boton Idiomas
+
+document.addEventListener("DOMContentLoaded", function() {
+    const languageButton = document.getElementById('language-button');
+    const dropdown = document.querySelector('.dropdown');
+    const languageLinks = document.querySelectorAll('.lang');
+
+    // Función para alternar la visibilidad del menú desplegable
+    function toggleDropdown() {
+        dropdown.classList.toggle('show');
+    }
+
+    // Evento para abrir/cerrar el menú al hacer clic en el botón "Idioma"
+    languageButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        toggleDropdown();
+    });
+
+    // Evento para cerrar el menú al seleccionar un idioma
+    languageLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            toggleDropdown();
+            // Aquí también puedes agregar la lógica para cambiar el idioma si aún no está implementada
+        });
+    });
+
+    // Evento para cerrar el menú si se hace clic fuera de él
+    document.addEventListener('click', function(e) {
+        if (!dropdown.contains(e.target) && !languageButton.contains(e.target)) {
+            dropdown.classList.remove('show');
+        }
+    });
+});
+
+// Carrusel de imagenes
+
 let slideIndex = 0;
 const slides = document.getElementsByClassName("mySlides");
 const progressBar = document.querySelector(".progress");
@@ -77,7 +114,7 @@ function showSlides() {
     }
     slides[slideIndex - 1].style.display = "block";
     resetProgressBar();
-    setTimeout(showSlides, 5000); // Cambia de imagen cada 5 segundos
+    setTimeout(showSlides, 5000); // Imagen cada 5 segundos
 }
 
 function resetProgressBar() {

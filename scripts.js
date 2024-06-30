@@ -126,3 +126,20 @@ function resetProgressBar() {
 document.addEventListener("DOMContentLoaded", function () {
     showSlides();
 });
+
+// Redirección web
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Seleccionar todas las imágenes de proyecto
+    const projectImages = document.querySelectorAll('.project-img');
+
+    // Agregar evento de click a cada imagen
+    projectImages.forEach(image => {
+        image.addEventListener('click', function() {
+            // Obtener la URL del atributo data-url
+            const url = this.getAttribute('data-url');
+            // Redirigir a la URL
+            window.location.href = url;
+        });
+    });
+});

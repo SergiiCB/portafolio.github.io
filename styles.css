@@ -102,16 +102,20 @@ nav .nav-links li a:hover {
     transform: translateY(-2px);
 }
 
+/* Estilo boton Idiomas */
+
 /* Estilo del menú desplegable dentro del nav: inicialmente oculto y con sombra */
 nav .dropdown {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 152.5%;
     right: 0;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
     list-style: none;
-    z-index: 20; 
+    width: 22.5%;
+    z-index: 20;
 }
 
 /* Estilo de los enlaces dentro del menú desplegable */
@@ -121,10 +125,18 @@ nav .dropdown li a {
     color: #1d1d1f;
 }
 
-/* Muestra el menú desplegable cuando se hace hover en el contenedor de dropdown */
-.dropdown-container:hover .dropdown {
+/* Efecto hover para los enlaces dentro del menú desplegable */
+nav .dropdown li a:hover {
+    background-color: #007aff;
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+/* Estilo del menú desplegable cuando tiene la clase .show */
+nav .dropdown.show {
     display: block;
 }
+
+/* Estilo  barra lateral de redes sociales */
 
 /* Estilo de la barra lateral de redes sociales: fija, centrada verticalmente y con sombra */
 .social-sidebar {

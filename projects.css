@@ -210,6 +210,10 @@ footer p {
     margin: 0;
 }
 
+.project-img {
+    cursor: pointer;
+}
+
 /* Estilos responsivos para pantallas con ancho máximo de 768px */
 @media (max-width: 768px) {
     header {

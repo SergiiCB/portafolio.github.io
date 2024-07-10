@@ -141,6 +141,24 @@ footer p {
     margin-bottom: 20px;
 }
 
+/* Añadir estilos para el iframe de Google Slides */
+.iframe-container {
+    background-color: #fff;
+    border: px solid #000000;
+    border-radius: 12px;
+    padding: px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 960px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
 /* Estilos específicos para la página de proyectos detallados */
 .title-projects {
     padding: 60px 40px;

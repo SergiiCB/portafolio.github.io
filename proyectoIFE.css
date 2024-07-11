@@ -112,11 +112,19 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 150px;
     padding: 20px;
 }
 
-/* Estilo para los recuadros de presentación y Tableau */
+/* Google Slides */
+.iframe-container {
+   }
+
+iframe {
+  border-radius: 10px;   
+}
+
+/* Tableau */
 .presentation-box {
     background-color: #fff;
     border: 1px solid #ccc;
@@ -139,24 +147,6 @@ footer p {
     max-width: 3000px;
     overflow: hidden;
     margin-bottom: 20px;
-}
-
-/* Añadir estilos para el iframe de Google Slides */
-.iframe-container {
-    background-color: #fff;
-    border: px solid #000000;
-    border-radius: 12px;
-    padding: px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 960px;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-
-iframe {
-    border-radius: 10px;
 }
 
 /* Estilos específicos para la página de proyectos detallados */

@@ -46,7 +46,7 @@ const translations = {
         emailPlaceholder: "Correu electrònic",
         messagePlaceholder: "Missatge",
         submitButton: "Enviar",
-        hello: "Hola, sóc Sergi",
+        hello: "Hola, sóc en Sergi.",
         developer: "Data scientist | Especialista en Power BI, Tableau, Python, SQL, RStudio",
         viewProjects: "Veure Els Meus Projectes",
         briefDescription: "Soc un estudiant de Ciència de Dades de la UOC, apassionat per aquest camp i la programació en general. Em considero una persona responsable, compromesa i entusiasta, amb una gran capacitat per a treballar en equip. Actualment, busco una oportunitat per a realitzar les meves pràctiques curriculars en una empresa innovadora que em permeti continuar aprenent i desenvolupant les meves habilitats.",

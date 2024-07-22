@@ -143,34 +143,6 @@ function updateContent(language) {
     // Actualizar secciones de proyectos
     const detailedProjects = document.querySelector('.detailed-projects');
     detailedProjects.innerHTML = ''; // Limpiar contenido actual
-
-    translation.projects.forEach(category => {
-        // Crear y añadir la categoría del proyecto
-        const categoryTitle = document.createElement('h2');
-        categoryTitle.innerText = category.category;
-        detailedProjects.appendChild(categoryTitle);
-
-        const projectList = document.createElement('div');
-        projectList.classList.add('project-list');
-
-        category.projects.forEach(project => {
-            // Crear y añadir cada proyecto
-            const projectItem = document.createElement('div');
-            projectItem.classList.add('project-item');
-
-            const projectTitle = document.createElement('h3');
-            projectTitle.innerText = project.title;
-            projectItem.appendChild(projectTitle);
-
-            const projectDesc = document.createElement('p');
-            projectDesc.innerText = project.description;
-            projectItem.appendChild(projectDesc);
-
-            projectList.appendChild(projectItem);
-        });
-
-        detailedProjects.appendChild(projectList);
-    });
 }
 
 // Botón Idiomas

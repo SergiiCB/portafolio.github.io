@@ -211,11 +211,34 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Inicializar el contenido en español por defecto
-document.addEventListener("DOMContentLoaded", function() {
-    updateContent('es');
-});
+// Carrusel de imagenes
 
+let slideIndex = 0;
+const slides = document.getElementsByClassName("mySlides");
+const progressBar = document.querySelector(".progress");
+
+function showSlides() {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    resetProgressBar();
+    setTimeout(showSlides, 5000); // Imagen cada 5 segundos
+}
+
+function resetProgressBar() {
+    progressBar.style.animation = "none";
+    void progressBar.offsetWidth; // Reinicia la animación
+    progressBar.style.animation = "progress 5s linear infinite";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    showSlides();
+});
 
 // Redirección web
 

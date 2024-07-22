@@ -153,25 +153,30 @@ function updateContent(language) {
         const projectList = document.createElement('div');
         projectList.classList.add('project-list');
 
-category.projects.forEach(project => {
-// Crear y añadir cada proyecto
-const projectItem = document.createElement('div');
-projectItem.classList.add('project-item');
-
-const projectTitle = document.createElement('h3');
-projectTitle.innerText = project.title;
-projectItem.appendChild(projectTitle);
-
-const projectDesc = document.createElement('p');
-projectDesc.innerText = project.description;
-projectItem.appendChild(projectDesc);
-
-projectList.appendChild(projectItem);
-});
-
-detailedProjects.appendChild(projectList);
-});
-      
+        category.projects.forEach(project => {
+        // Crear y añadir cada proyecto
+        const projectItem = document.createElement('div');
+        projectItem.classList.add('project-item');
+        
+        const projectImg = document.createElement('img');
+        projectImg.classList.add('project-img');
+        projectImg.src = 'images/projects/${project.imgAlt.toLowerCase().replace(/ /g, '')}.png';
+        projectImg.alt = project.imgAlt;
+        projectItem.appendChild(projectImg);
+        
+        const projectTitle = document.createElement('h3');
+        projectTitle.innerText = project.title;
+        projectItem.appendChild(projectTitle);
+        
+        const projectDesc = document.createElement('p');
+        projectDesc.innerText = project.description;
+        projectItem.appendChild(projectDesc);
+        
+        projectList.appendChild(projectItem);
+        });
+        
+        detailedProjects.appendChild(projectList);
+        });
 }
 
 // Boton Idiomas

@@ -160,7 +160,7 @@ function updateContent(language) {
 
             const projectImg = document.createElement('img');
             projectImg.classList.add('project-img');
-            projectImg.src = `images/projects/${project.imgAlt.toLowerCase().replace(/ /g, '')}.png`;
+            projectImg.src = `images/projects/proyectoIFE.png`;
             projectImg.alt = project.imgAlt;
             projectItem.appendChild(projectImg);
 

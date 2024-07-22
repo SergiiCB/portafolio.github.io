@@ -154,32 +154,32 @@ function updateContent(language) {
         projectList.classList.add('project-list');
 
         category.projects.forEach(project => {
-        // Crear y añadir cada proyecto
-        const projectItem = document.createElement('div');
-        projectItem.classList.add('project-item');
-        
-        const projectImg = document.createElement('img');
-        projectImg.classList.add('project-img');
-        projectImg.src = 'images/projects/${project.imgAlt.toLowerCase().replace(/ /g, '')}.png';
-        projectImg.alt = project.imgAlt;
-        projectItem.appendChild(projectImg);
-        
-        const projectTitle = document.createElement('h3');
-        projectTitle.innerText = project.title;
-        projectItem.appendChild(projectTitle);
-        
-        const projectDesc = document.createElement('p');
-        projectDesc.innerText = project.description;
-        projectItem.appendChild(projectDesc);
-        
-        projectList.appendChild(projectItem);
+            // Crear y añadir cada proyecto
+            const projectItem = document.createElement('div');
+            projectItem.classList.add('project-item');
+
+            const projectImg = document.createElement('img');
+            projectImg.classList.add('project-img');
+            projectImg.src = `images/projects/${project.imgAlt.toLowerCase().replace(/ /g, '')}.png`;
+            projectImg.alt = project.imgAlt;
+            projectItem.appendChild(projectImg);
+
+            const projectTitle = document.createElement('h3');
+            projectTitle.innerText = project.title;
+            projectItem.appendChild(projectTitle);
+
+            const projectDesc = document.createElement('p');
+            projectDesc.innerText = project.description;
+            projectItem.appendChild(projectDesc);
+
+            projectList.appendChild(projectItem);
         });
-        
+
         detailedProjects.appendChild(projectList);
-        });
+    });
 }
 
-// Boton Idiomas
+// Botón Idiomas
 
 document.addEventListener("DOMContentLoaded", function() {
     const languageButton = document.getElementById('language-button');
@@ -209,9 +209,12 @@ document.addEventListener("DOMContentLoaded", function() {
             dropdown.classList.remove('show');
         }
     });
+
+    // Inicializar el contenido en español por defecto
+    updateContent('es');
 });
 
-// Carrusel de imagenes
+// Carrusel de imágenes
 
 let slideIndex = 0;
 const slides = document.getElementsByClassName("mySlides");

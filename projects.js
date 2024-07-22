@@ -23,12 +23,14 @@ const translations = {
                         description: "Entre el 2001 y 2015",
                         imgSrc: "images/projects/proyectoIFE.png",
                         imgAlt: "Proyecto 1"
+                        url: "proyectoIFE.html"
                     },
                     {
                         title: "Proyecto 2",
                         description: "Descripción del proyecto 2",
                         imgSrc: "images/projects/proyecto2.png",
                         imgAlt: "Proyecto 2"
+                        url: ""
                     }
                 ]
             },
@@ -40,12 +42,14 @@ const translations = {
                         description: "Descripción del proyecto 1",
                         imgSrc: "images/projects/proyecto1.png",
                         imgAlt: "Proyecto 1"
+                        url: ""
                     },
                     {
                         title: "Proyecto 2",
                         description: "Descripción del proyecto 2",
                         imgSrc: "images/projects/proyecto2.png",
                         imgAlt: "Proyecto 2"
+                        url: ""
                     }
                 ]
             }

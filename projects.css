@@ -214,68 +214,70 @@ footer p {
     cursor: pointer;
 }
 
-/* Estilos responsivos para pantallas con ancho máximo de 768px */
+/* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
+    .detailed-projects .project-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .detailed-projects .project-item {
+        width: 100%;
+    }
+
     header {
-        flex-direction: column;
-        padding: 20px 20px;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-    }
-
-    nav .logo {
-        margin-bottom: 10px;
-        align-self: center;
-    }
-
-    nav .nav-links {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px;
-        width: 100%;
-        justify-content: space-around;
-    }
-
-    nav .nav-links li {
-        flex: 1 1 auto;
-        text-align: center;
-    }
-
-    nav .nav-links li a {
-        display: block;
-        width: 100%;
-        padding: 10px;
-    }
-
-    .dropdown-container {
-        align-self: center;
-        margin-top: 10px;
+        padding: 10px 20px;
     }
 
     .dropdown-container a {
-        display: inline-block;
-        padding: 10px 20px;
+        font-size: 14px;
+        padding: 8px 16px;
     }
 
-    .dropdown-container .dropdown {
-        position: static;
-        width: 100%;
-        box-shadow: none;
-        background-color: transparent;
+    nav .dropdown {
+        top: 125%;
+        width: 50%;
     }
 
-    .dropdown-container .dropdown li a {
-        display: block;
-        padding: 10px 20px;
-        text-align: center;
-        background-color: #fff;
-        border: 1px solid #e1e1e1;
-        border-radius: 5px;
-        margin: 5px 0;
+    .title-projects {
+        padding: 30px 20px;
+    }
+
+    .detailed-projects {
+        padding: 30px 20px;
+    }
+
+    .detailed-projects h1 {
+        font-size: 28px;
+    }
+
+    .detailed-projects h2 {
+        font-size: 24px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .tools-section {
+        padding: 20px 10px;
+    }
+
+    .tools-section .tool-item {
+        width: 80px;
+    }
+
+    .tools-section .tool-item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tools-section .tool-item p {
+        font-size: 12px;
     }
 }

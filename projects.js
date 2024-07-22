@@ -21,11 +21,13 @@ const translations = {
                     {
                         title: "Incendios forestales en España",
                         description: "Entre el 2001 y 2015",
+                        imgSrc: "images/projects/proyectoIFE.png",
                         imgAlt: "Proyecto 1"
                     },
                     {
                         title: "Proyecto 2",
                         description: "Descripción del proyecto 2",
+                        imgSrc: "images/projects/proyecto2.png",
                         imgAlt: "Proyecto 2"
                     }
                 ]
@@ -36,17 +38,20 @@ const translations = {
                     {
                         title: "Proyecto 1",
                         description: "Descripción del proyecto 1",
+                        imgSrc: "images/projects/proyecto1.png",
                         imgAlt: "Proyecto 1"
                     },
                     {
                         title: "Proyecto 2",
                         description: "Descripción del proyecto 2",
+                        imgSrc: "images/projects/proyecto2.png",
                         imgAlt: "Proyecto 2"
                     }
                 ]
             }
         ]
     },
+    // Añadir las secciones correspondientes para 'en' y 'ca'
     en: {
         title: "Projects",
         description: "Here are some of my projects",
@@ -60,11 +65,13 @@ const translations = {
                     {
                         title: "Forest Fires in Spain",
                         description: "Between 2001 and 2015",
+                        imgSrc: "images/projects/proyectoIFE.png",
                         imgAlt: "Project 1"
                     },
                     {
                         title: "Project 2",
                         description: "Project 2 description",
+                        imgSrc: "images/projects/proyecto2.png",
                         imgAlt: "Project 2"
                     }
                 ]
@@ -75,11 +82,13 @@ const translations = {
                     {
                         title: "Project 1",
                         description: "Project 1 description",
+                        imgSrc: "images/projects/proyecto1.png",
                         imgAlt: "Project 1"
                     },
                     {
                         title: "Project 2",
                         description: "Project 2 description",
+                        imgSrc: "images/projects/proyecto2.png",
                         imgAlt: "Project 2"
                     }
                 ]
@@ -99,11 +108,13 @@ const translations = {
                     {
                         title: "Incendis forestals a Espanya",
                         description: "Entre el 2001 i 2015",
+                        imgSrc: "images/projects/proyectoIFE.png",
                         imgAlt: "Projecte 1"
                     },
                     {
                         title: "Projecte 2",
                         description: "Descripció del projecte 2",
+                        imgSrc: "images/projects/proyecto2.png",
                         imgAlt: "Projecte 2"
                     }
                 ]
@@ -114,11 +125,13 @@ const translations = {
                     {
                         title: "Projecte 1",
                         description: "Descripció del projecte 1",
+                        imgSrc: "images/projects/proyecto1.png",
                         imgAlt: "Projecte 1"
                     },
                     {
                         title: "Projecte 2",
                         description: "Descripció del projecte 2",
+                        imgSrc: "images/projects/proyecto2.png",
                         imgAlt: "Projecte 2"
                     }
                 ]
@@ -143,6 +156,40 @@ function updateContent(language) {
     // Actualizar secciones de proyectos
     const detailedProjects = document.querySelector('.detailed-projects');
     detailedProjects.innerHTML = ''; // Limpiar contenido actual
+
+    translation.projects.forEach(category => {
+        // Crear y añadir la categoría del proyecto
+        const categoryTitle = document.createElement('h2');
+        categoryTitle.innerText = category.category;
+        detailedProjects.appendChild(categoryTitle);
+
+        const projectList = document.createElement('div');
+        projectList.classList.add('project-list');
+
+        category.projects.forEach(project => {
+            // Crear y añadir cada proyecto
+            const projectItem = document.createElement('div');
+            projectItem.classList.add('project-item');
+
+            const projectImg = document.createElement('img');
+            projectImg.classList.add('project-img');
+            projectImg.src = project.imgSrc;
+            projectImg.alt = project.imgAlt;
+            projectItem.appendChild(projectImg);
+
+            const projectTitle = document.createElement('h3');
+            projectTitle.innerText = project.title;
+            projectItem.appendChild(projectTitle);
+
+            const projectDesc = document.createElement('p');
+            projectDesc.innerText = project.description;
+            projectItem.appendChild(projectDesc);
+
+            projectList.appendChild(projectItem);
+        });
+
+        detailedProjects.appendChild(projectList);
+    });
 }
 
 // Botón Idiomas
@@ -178,6 +225,35 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Inicializar el contenido en español por defecto
     updateContent('es');
+});
+
+// Carrusel de imágenes
+
+let slideIndex = 0;
+const slides = document.getElementsByClassName("mySlides");
+const progressBar = document.querySelector(".progress");
+
+function showSlides() {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    resetProgressBar();
+    setTimeout(showSlides, 5000); // Imagen cada 5 segundos
+}
+
+function resetProgressBar() {
+    progressBar.style.animation = "none";
+    void progressBar.offsetWidth; // Reinicia la animación
+    progressBar.style.animation = "progress 5s linear infinite";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    showSlides();
 });
 
 // Redirección web

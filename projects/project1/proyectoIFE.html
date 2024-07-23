@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación y Gráfico</title>
+    <link rel="stylesheet" href="proyectoIFE.css">
+    <link rel="icon" type="image/png" href="images/profileimage.jpg">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/profileimage.jpg" alt="Profile Image" class="profile-image">
+                </a>
+            </div>
+            <div class="dropdown-container">
+                <a href="#" id="language-button">Idioma</a>
+                <ul class="dropdown">
+                    <li><a href="#" class="lang" data-lang="es">Español</a></li>
+                    <li><a href="#" class="lang" data-lang="en">English</a></li>
+                    <li><a href="#" class="lang" data-lang="ca">Català</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="title-section">
+        <h1>Incendios forestales en España entre 2001 y 2015</h1>
+    </section>
+
+    <section class="content-section">
+        <div class="presentation-container">
+            <h2>Mi Presentación de Google Slides</h2>
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ-CS--c6B8Cuo7cObU3e23Vy09e0jgw51afAgYUV6Y3f9NS_os-jvo8f-xa0cZ8gQ6N0o04WfEIO2i/embed?start=true&loop=true&delayms=5000" frameborder="0" width="780" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+
+        <div class="tableau-container">
+            <h2></h2>
+            <div class='tableauPlaceholder' id='viz1719761199944' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='' src='https://public.tableau.com/static/images/In/IncendiosforestalesenEspaaentre2001y2015/Dashboard1/1_rss.png' style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz'  style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='IncendiosforestalesenEspaaentre2001y2015/Dashboard1' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https://public.tableau.com/static/images/In/IncendiosforestalesenEspaaentre2001y2015/Dashboard1/1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='es-ES' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1719761199944');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                if (divElement.offsetWidth > 800) {
+                    vizElement.style.minWidth='420px';
+                    vizElement.style.maxWidth='3840px';
+                    vizElement.style.width='100%';
+                    vizElement.style.minHeight='587px';
+                    vizElement.style.maxHeight='2187px';
+                    vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                } else if (divElement.offsetWidth > 500) {
+                    vizElement.style.minWidth='420px';
+                    vizElement.style.maxWidth='3840px';
+                    vizElement.style.width='100%';
+                    vizElement.style.minHeight='587px';
+                    vizElement.style.maxHeight='2187px';
+                    vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                } else {
+                    vizElement.style.width='100%';
+                    vizElement.style.height='1127px';
+                }
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Portafolio | Sergi Cózar Badia</p>
+    </footer>
+
+    <script src="projects.js"></script>
+</body>
+</html>

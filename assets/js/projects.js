@@ -21,14 +21,14 @@ const translations = {
                     {
                         title: "Incendios forestales en España",
                         description: "Entre el 2001 y 2015",
-                        imgSrc: "images/projects/proyectoIFE.png",
+                        imgSrc: "assets/images/projects/project_1.png",
                         imgAlt: "Proyecto 1",
-                        url: "proyectoIFE.html"
+                        url: "project_1.html"
                     },
                     {
                         title: "Proyecto 2",
                         description: "Descripción del proyecto 2",
-                        imgSrc: "images/projects/proyecto2.png",
+                        imgSrc: "assets/images/projects/comingsoon.png",
                         imgAlt: "Proyecto 2",
                         url: "proyecto2.html"
                     }
@@ -40,14 +40,14 @@ const translations = {
                     {
                         title: "Proyecto 1",
                         description: "Descripción del proyecto 1",
-                        imgSrc: "images/projects/proyecto1.png",
+                        imgSrc: "assets/images/projects/comingsoon.png",
                         imgAlt: "Proyecto 1",
                         url: "proyecto1.html"
                     },
                     {
                         title: "Proyecto 2",
                         description: "Descripción del proyecto 2",
-                        imgSrc: "images/projects/proyecto2.png",
+                        imgSrc: "assets/images/projects/comingsoon.png",
                         imgAlt: "Proyecto 2",
                         url: "proyecto2.html"
                     }
@@ -68,14 +68,14 @@ const translations = {
                     {
                         title: "Forest Fires in Spain",
                         description: "Between 2001 and 2015",
-                        imgSrc: "images/projects/proyectoIFE.png",
+                        imgSrc: "assets/images/projects/project_1.png",
                         imgAlt: "Project 1",
-                        url: "proyectoIFE.html"
+                        url: "project_1.html"
                     },
                     {
                         title: "Project 2",
                         description: "Project 2 description",
-                        imgSrc: "images/projects/proyecto2.png",
+                        imgSrc: "assets/images/projects/comingsoon.png",
                         imgAlt: "Project 2",
                         url: "project2.html"
                     }
@@ -87,14 +87,14 @@ const translations = {
                     {
                         title: "Project 1",
                         description: "Project 1 description",
-                        imgSrc: "images/projects/proyecto1.png",
+                        imgSrc: "assets/images/projects/comingsoon.png",
                         imgAlt: "Project 1",
                         url: "project1.html"
                     },
                     {
                         title: "Project 2",
                         description: "Project 2 description",
-                        imgSrc: "images/projects/proyecto2.png",
+                        imgSrc: "assets/images/projects/comingsoon.png",
                         imgAlt: "Project 2",
                         url: "project2.html"
                     }
@@ -115,14 +115,14 @@ const translations = {
                     {
                         title: "Incendis forestals a Espanya",
                         description: "Entre el 2001 i 2015",
-                        imgSrc: "images/projects/proyectoIFE.png",
+                        imgSrc: "assets/images/projects/project_1.png",
                         imgAlt: "Projecte 1",
-                        url: "proyectoIFE.html"
+                        url: "project_1.html"
                     },
                     {
                         title: "Projecte 2",
                         description: "Descripció del projecte 2",
-                        imgSrc: "images/projects/proyecto2.png",
+                        imgSrc: "assets/images/projects/comingsoon.png",
                         imgAlt: "Projecte 2",
                         url: "projecte2.html"
                     }
@@ -134,14 +134,14 @@ const translations = {
                     {
                         title: "Projecte 1",
                         description: "Descripció del projecte 1",
-                        imgSrc: "images/projects/proyecto1.png",
+                        imgSrc: "assets/images/projects/comingsoon.png",
                         imgAlt: "Projecte 1",
                         url: "projecte1.html"
                     },
                     {
                         title: "Projecte 2",
                         description: "Descripció del projecte 2",
-                        imgSrc: "images/projects/proyecto2.png",
+                        imgSrc: "assets/images/projects/comingsoon.png",
                         imgAlt: "Projecte 2",
                         url: "projecte2.html"
                     }

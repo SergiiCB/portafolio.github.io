@@ -402,23 +402,22 @@ footer p {
         padding: 10px;
     }
 
-    .dropdown-container {
+     .dropdown-container{
         align-self: center;
-        margin-top: 10px;   
-        width: 36%;
+        font-size: 14px;
+        padding: 8px 16px;
     }
-
+  
     .dropdown-container a {
         display: inline-block;
-        padding: 10px 20px;
+        padding: 10px 23.3px;
     }
 
      .dropdown-container .dropdown {
         position: static;
-        width: 135%;
+        width: 100%;
         top: 125%;
-        box-shadow: none;
-        background-color: transparent;
+        box-shadow: none;  
     }
 
     .dropdown-container .dropdown li a {
@@ -429,4 +428,3 @@ footer p {
         border-radius: 5px;
         margin: 1px 0;
     }
-}

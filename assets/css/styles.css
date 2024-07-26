@@ -413,9 +413,10 @@ footer p {
         padding: 10px 20px;
     }
 
-    .dropdown-container .dropdown {
+     .dropdown-container .dropdown {
         position: static;
-        width: 100%;
+        width: 135%;
+        top: 125%;
         box-shadow: none;
         background-color: transparent;
     }

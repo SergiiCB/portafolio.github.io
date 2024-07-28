@@ -7,53 +7,51 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-const translations = {
-    es: {
-        about: "Sobre Mí",
-        projects: "Proyectos",
-        contact: "Contacto",
-        namePlaceholder: "Nombre",
-        emailPlaceholder: "Email",
-        messagePlaceholder: "Mensaje",
-        submitButton: "Enviar",
-        hello: "Hola, soy Sergi",
-        developer: "Data scientist | Especialista en Power BI, Tableau, Python, SQL, RStudio",
-        viewProjects: "Ver Mis Proyectos",
-        briefDescription: "Soy un estudiante de Ciencia de Datos en la UOC, apasionado por este campo y la programación en general. Me considero una persona responsable, comprometida y entusiasta, con una gran capacidad para trabajar en equipo. Actualmente, busco una oportunidad para realizar mis prácticas curriculares en una empresa innovadora que me permita seguir aprendiendo y desarrollando mis habilidades.",
-        footerText: "Portafolio | Sergi Cózar Badia",
-        languageButton: "Idioma"
-    },
-    en: {
-        about: "About Me",
-        projects: "Projects",
-        contact: "Contact",
-        namePlaceholder: "Name",
-        emailPlaceholder: "Email",
-        messagePlaceholder: "Message",
-        submitButton: "Send",
-        hello: "Hello, I'm Sergi",
-        developer: "Data scientist | Specialist in Power BI, Tableau, Python, SQL, RStudio",
-        viewProjects: "View My Projects",
-        briefDescription: "I'm a data science student at the UOC with a passion for organizing and analyzing information. My approach to work is characterized by consistency, responsibility, and collaborative team environments. I am currently looking for an internship opportunity at a forward-thinking company to apply for and improve my skills. I am excited to learn and develop my future career in the field of data science.",
-        footerText: "Portfolio | Sergi Cózar Badia",
-        languageButton: "Language"
-    },
-    ca: {
-        about: "Sobre Mi",
-        projects: "Projectes",
-        contact: "Contacte",
-        namePlaceholder: "Nom",
-        emailPlaceholder: "Correu electrònic",
-        messagePlaceholder: "Missatge",
-        submitButton: "Enviar",
-        hello: "Hola, sóc en Sergi.",
-        developer: "Data scientist | Especialista en Power BI, Tableau, Python, SQL, RStudio",
-        viewProjects: "Veure Els Meus Projectes",
-        briefDescription: "Soc un estudiant de Ciència de Dades de la UOC, apassionat per aquest camp i la programació en general. Em considero una persona responsable, compromesa i entusiasta, amb una gran capacitat per a treballar en equip. Actualment, busco una oportunitat per a realitzar les meves pràctiques curriculars en una empresa innovadora que em permeti continuar aprenent i desenvolupant les meves habilitats.",
-        footerText: "Portafoli | Sergi Cózar Badia",
-        languageButton: "Idioma"
-    }
-};
+es: {
+    about: "Sobre Mí",
+    projects: "Proyectos",
+    contact: "Contacto",
+    namePlaceholder: "Nombre",
+    emailPlaceholder: "Email",
+    messagePlaceholder: "Mensaje",
+    submitButton: "Enviar",
+    hello: "Hola, soy Sergi",
+    developer: "Data scientist | Especialista en Power BI, Tableau, Python, SQL, RStudio",
+    viewProjects: "Ver Mis Proyectos",
+    briefDescription: "Soy un estudiante de Ciencia de Datos en la UOC, apasionado por este campo y la programación en general. Me considero una persona responsable, comprometida y entusiasta, con una gran capacidad para trabajar en equipo. Actualmente, busco una oportunidad para realizar mis prácticas curriculares en una empresa innovadora que me permita seguir aprendiendo y desarrollando mis habilidades.\n\nEsta web ha sido diseñada y creada por mí para publicar y mostrar los proyectos que realizo. A pesar de no tener un conocimiento profundo ni estar especializado en programación HTML, CSS y JavaScript, considero que el diseño de esta web es un gran proyecto. Refleja no solo mi conocimiento en forma de portafolio, sino también mi capacidad para aprender y adaptarme a nuevas tecnologías y desafíos sin tener experiencia previa.",
+    footerText: "Portafolio | Sergi Cózar Badia",
+    languageButton: "Idioma"
+},
+en: {
+    about: "About Me",
+    projects: "Projects",
+    contact: "Contact",
+    namePlaceholder: "Name",
+    emailPlaceholder: "Email",
+    messagePlaceholder: "Message",
+    submitButton: "Send",
+    hello: "Hello, I'm Sergi",
+    developer: "Data scientist | Specialist in Power BI, Tableau, Python, SQL, RStudio",
+    viewProjects: "View My Projects",
+    briefDescription: "I'm a data science student at the UOC with a passion for organizing and analyzing information. My approach to work is characterized by consistency, responsibility, and collaborative team environments. I am currently looking for an internship opportunity at a forward-thinking company to apply for and improve my skills. I am excited to learn and develop my future career in the field of data science.\n\nThis website was designed and created by me to showcase the projects I have worked on. Despite not having an extensive background in HTML, CSS, and JavaScript, I believe the creation of this site itself is a significant project. It reflects not only my knowledge in the form of a portfolio but also my ability to learn and adapt to new technologies and challenges without prior experience.",
+    footerText: "Portfolio | Sergi Cózar Badia",
+    languageButton: "Language"
+},
+ca: {
+    about: "Sobre Mi",
+    projects: "Projectes",
+    contact: "Contacte",
+    namePlaceholder: "Nom",
+    emailPlaceholder: "Correu electrònic",
+    messagePlaceholder: "Missatge",
+    submitButton: "Enviar",
+    hello: "Hola, sóc en Sergi.",
+    developer: "Data scientist | Especialista en Power BI, Tableau, Python, SQL, RStudio",
+    viewProjects: "Veure Els Meus Projectes",
+    briefDescription: "Soc un estudiant de Ciència de Dades de la UOC, apassionat per aquest camp i la programació en general. Em considero una persona responsable, compromesa i entusiasta, amb una gran capacitat per a treballar en equip. Actualment, busco una oportunitat per a realitzar les meves pràctiques curriculars en una empresa innovadora que em permeti continuar aprenent i desenvolupant les meves habilitats.\n\nAquesta web ha estat dissenyada i creada per mi per publicar i mostrar els projectes que faig. Tot i no tenir un coneixement profund ni estar especialitzat en programació HTML, CSS i JavaScript, considero que el disseny d'aquesta web és un gran projecte. Reflecteix no només el meu coneixement en forma de portafoli, sinó també la meva capacitat per aprendre i adaptar-me a noves tecnologies i reptes sense tenir experiència prèvia.",
+    footerText: "Portafoli | Sergi Cózar Badia",
+    languageButton: "Idioma"
+}
 
 document.querySelectorAll('.lang').forEach(link => {
     link.addEventListener('click', function(e) {

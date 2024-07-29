@@ -10,7 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const translations = {
     es: {
         title: "Proyectos",
-        description: "A continuación, se presentan algunos de los proyectos destacados que he realizado. Próximamente, seguiré incorporando nuevos proyectos y actualizando los existentes para reflejar mi crecimiento profesional y las nuevas competencias adquiridas.",
+        description: "A continuación, se presentan algunos de los proyectos destacados que he realizado.<br>Próximamente, seguiré incorporando nuevos proyectos y actualizando los existentes para reflejar mi crecimiento profesional y las nuevas competencias adquiridas.",
         toolsTitle: "Herramientas",
         languageButton: "Idioma",
         footerText: "&copy; Portafolio | Sergi Cózar Badia",
@@ -57,7 +57,7 @@ const translations = {
     },
     en: {
         title: "Projects",
-        description: "Here are some of the standout projects I have completed. Soon, I will continue to add new projects and update existing ones to reflect my professional growth and newly acquired competencies.",
+        description: "Here are some of the standout projects I have completed.<br>Soon, I will continue to add new projects and update existing ones to reflect my professional growth and newly acquired competencies.",
         toolsTitle: "Tools",
         languageButton: "Language",
         footerText: "&copy; Portfolio | Sergi Cózar Badia",
@@ -104,7 +104,7 @@ const translations = {
     },
     ca: {
         title: "Projectes",
-        description: "A continuació, es presenten alguns dels projectes destacats que he realitzat. Pròximament, continuaré incorporant nous projectes i actualitzant els existents per reflectir el meu creixement professional i les noves competències adquirides.",
+        description: "A continuació, es presenten alguns dels projectes destacats que he realitzat.<br>Pròximament, continuaré incorporant nous projectes i actualitzant els existents per reflectir el meu creixement professional i les noves competències adquirides.",
         toolsTitle: "Eines",
         languageButton: "Idioma",
         footerText: "&copy; Portafoli | Sergi Cózar Badia",

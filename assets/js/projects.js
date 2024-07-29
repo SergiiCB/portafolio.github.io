@@ -156,7 +156,7 @@ function updateContent(language) {
 
     // Actualizar títulos y descripciones generales
     document.querySelector('.title-projects h1').innerText = translation.title;
-    document.querySelector('.title-projects p').innerText = translation.description;
+    document.querySelector('.title-projects p').innerHTML = translation.description; // Cambiado a innerHTML
 
     // Actualizar botón de idioma
     document.getElementById('language-button').innerText = translation.languageButton;

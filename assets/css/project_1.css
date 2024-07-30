@@ -246,7 +246,7 @@ iframe {
 /* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
     header {
-        padding: 10px 20px;
+        padding: 20px 20px;
     }
 
     .title-projects {
@@ -301,7 +301,7 @@ iframe {
     }
 
     nav .dropdown {
-        top: 120%;
+        top: 145%;
         width: auto;
     }
 }

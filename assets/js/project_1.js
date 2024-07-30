@@ -24,8 +24,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const translation = translations[language];
 
         document.querySelector('.title-section h1').innerText = translation.mainTitle;
-        document.querySelector('.presentation-container h2').innerText = translation.presentationTitle;
-        document.querySelector('.tableau-container h2').innerText = translation.tableauTitle;
         document.querySelector('.presentation-container iframe').src = translation.slidesSrc;
 
         // Actualizar botón de idioma

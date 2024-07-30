@@ -28,11 +28,24 @@ nav {
     z-index: 10;
 }
 
+/* Contenedor para la imagen y el logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
 /* Estilo botón Idiomas */
 .dropdown-container {
     position: relative;
-    flex: 1;
-    text-align: right;
+    margin-left: auto; /* Alinea el contenedor del botón al final */
 }
 
 .dropdown-container a {
@@ -55,13 +68,13 @@ nav {
 nav .dropdown {
     display: none;
     position: absolute;
-    top: 152.5%;
+    top: 120%;
     right: 0;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     border-radius: 8px;
     list-style: none;
-    width: 6%;
+    width: auto;
     z-index: 20;
 }
 
@@ -120,7 +133,7 @@ footer p {
 .iframe-container {}
 
 iframe {
-  border-radius: 10px;   
+    border-radius: 10px;   
 }
 
 /* Tableau */
@@ -157,19 +170,6 @@ iframe {
 .detailed-projects {
     padding: 60px 40px;
     text-align: center;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
-
-.profile-image {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
 }
 
 .detailed-projects h1, .detailed-projects h2 {
@@ -245,38 +245,6 @@ iframe {
 
 /* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
-    .dropdown-container a {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-
-    .dropdown-container {
-        text-align: left;
-    }
-
-    nav .dropdown {
-        top: 120%;
-        width: auto;
-    }
-
-    .content-section {
-        gap: 50px;
-    }
-
-    .presentation-container iframe,
-    .tableau-container object {
-        width: 100%;
-        height: auto;
-    }
-
-    .presentation-container iframe,
-    .tableau-container iframe {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-width: 480px) {
     header {
         padding: 10px 20px;
     }
@@ -330,10 +298,6 @@ iframe {
 
     .dropdown-container a {
         padding: 8px 16px;
-    }
-
-    .dropdown-container {
-        text-align: left;
     }
 
     nav .dropdown {

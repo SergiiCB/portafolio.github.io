@@ -226,9 +226,10 @@ document.addEventListener("DOMContentLoaded", function() {
         dropdown.classList.toggle('show');
     }
 
-    languageButton.addEventListener('click', function(e) {
-        e.preventDefault();
-        toggleDropdown();
+   languageButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        dropdown.classList.toggle('show');
+        dropdown.style.width = `${languageButton.offsetWidth}px`; // Ajusta el ancho del desplegable
     });
 
     languageLinks.forEach(link => {

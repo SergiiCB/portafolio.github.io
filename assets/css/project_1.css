@@ -131,6 +131,7 @@ footer p {
 /* Estilo para el texto introductorio */
 .intro-text {
     width: 100%;
+    margin: 0 auto;
     max-width: 800px;
     text-align: center;
     font-size: 18px;

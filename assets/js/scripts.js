@@ -99,9 +99,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Evento para abrir/cerrar el menú al hacer clic en el botón "Idioma"
-    languageButton.addEventListener('click', function(e) {
-        e.preventDefault();
-        toggleDropdown();
+    languageButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        dropdown.classList.toggle('show');
+        dropdown.style.width = `${languageButton.offsetWidth}px`;
     });
 
     // Evento para cerrar el menú al seleccionar un idioma

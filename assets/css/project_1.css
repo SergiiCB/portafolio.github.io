@@ -125,8 +125,17 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 150px;
     padding: 20px;
+}
+
+/* Estilo para el texto introductorio */
+.intro-text {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
 }
 
 /* Google Slides */
@@ -159,6 +168,12 @@ iframe {
     max-width: 3000px;
     overflow: hidden;
     margin-bottom: 20px;
+}
+
+
+/* Espaciado uniforme entre los elementos */
+.title-section, .intro-text, .presentation-container, .tableau-container {
+    margin-bottom: 60px;
 }
 
 /* Estilos específicos para la página de proyectos detallados */

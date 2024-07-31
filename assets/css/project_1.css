@@ -1,4 +1,3 @@
-/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +5,6 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-/* Estilo del encabezado */
 header {
     background-color: #fff;
     border-bottom: 1px solid #e1e1e1;
@@ -18,7 +16,6 @@ header {
     z-index: 10;
 }
 
-/* Estilo del nav */
 nav {
     display: flex;
     justify-content: space-between;
@@ -28,7 +25,6 @@ nav {
     z-index: 10;
 }
 
-/* Contenedor para la imagen y el logo */
 .logo-container {
     display: flex;
     align-items: center;
@@ -42,10 +38,9 @@ nav {
     margin-right: 10px;
 }
 
-/* Estilo botón Idiomas */
 .dropdown-container {
     position: relative;
-    margin-left: auto; /* Alinea el contenedor del botón al final */
+    margin-left: auto;
 }
 
 .dropdown-container a {
@@ -64,7 +59,6 @@ nav {
     transform: translateY(-2px);
 }
 
-/* Estilo del menú desplegable */
 nav .dropdown {
     display: none;
     position: absolute;
@@ -93,7 +87,6 @@ nav .dropdown.show {
     display: block;
 }
 
-/* Estilo del pie de página */
 footer {
     background-color: #f5f5f7;
     text-align: center;
@@ -106,7 +99,6 @@ footer p {
     color: #6e6e73;
 }
 
-/* Estilo para el recuadro gris del título */
 .title-box {
     background-color: #f2f2f2;
     padding: 20px;
@@ -120,7 +112,6 @@ footer p {
     color: #333;
 }
 
-/* Estilo para la sección de contenido */
 .content-section {
     display: flex;
     flex-direction: column;
@@ -128,7 +119,6 @@ footer p {
     padding: 20px;
 }
 
-/* Estilo para el texto introductorio */
 .intro-text {
     width: 100%;
     margin: 0 auto;
@@ -139,14 +129,12 @@ footer p {
     margin-bottom: 40px;
 }
 
-/* Google Slides */
 .iframe-container {}
 
 iframe {
     border-radius: 10px;   
 }
 
-/* Tableau */
 .presentation-box {
     background-color: #fff;
     border: 1px solid #ccc;
@@ -171,13 +159,10 @@ iframe {
     margin-bottom: 20px;
 }
 
-
-/* Espaciado uniforme entre los elementos */
 .title-section, .intro-text, .presentation-container, .tableau-container {
     margin-bottom: 60px;
 }
 
-/* Estilos específicos para la página de proyectos detallados */
 .title-projects {
     padding: 60px 40px;
     text-align: center;
@@ -246,7 +231,6 @@ iframe {
     line-height: 1.6;
 }
 
-/* Estilo de la sección de título */
 .title-section {
     background-color: #f5f5f7;
     padding: 40px 0;
@@ -259,7 +243,6 @@ iframe {
     margin-bottom: 20px;
 }
 
-/* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
     header {
         padding: 20px 20px;

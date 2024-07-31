@@ -154,22 +154,17 @@ const translations = {
 function updateContent(language) {
     const translation = translations[language];
 
-    // Actualizar títulos y descripciones generales
     document.querySelector('.title-projects h1').innerText = translation.title;
-    document.querySelector('.title-projects p').innerHTML = translation.description; // Cambiado a innerHTML
+    document.querySelector('.title-projects p').innerHTML = translation.description;
 
-    // Actualizar botón de idioma
     document.getElementById('language-button').innerText = translation.languageButton;
 
-    // Actualizar pie de página
     document.querySelector('footer p').innerHTML = translation.footerText;
 
-    // Actualizar secciones de proyectos
     const detailedProjects = document.querySelector('.detailed-projects');
-    detailedProjects.innerHTML = ''; // Limpiar contenido actual
+    detailedProjects.innerHTML = '';
 
     translation.projects.forEach(category => {
-        // Crear y añadir la categoría del proyecto
         const categoryTitle = document.createElement('h2');
         categoryTitle.innerText = category.category;
         detailedProjects.appendChild(categoryTitle);
@@ -178,7 +173,6 @@ function updateContent(language) {
         projectList.classList.add('project-list');
 
         category.projects.forEach(project => {
-            // Crear y añadir cada proyecto
             const projectItem = document.createElement('div');
             projectItem.classList.add('project-item');
 
@@ -186,7 +180,7 @@ function updateContent(language) {
             projectImg.classList.add('project-img');
             projectImg.src = project.imgSrc;
             projectImg.alt = project.imgAlt;
-            projectImg.setAttribute('data-url', project.url); // Añadir atributo data-url
+            projectImg.setAttribute('data-url', project.url);
             projectItem.appendChild(projectImg);
 
             const projectTitle = document.createElement('h3');
@@ -203,7 +197,6 @@ function updateContent(language) {
         detailedProjects.appendChild(projectList);
     });
 
-    // Agregar eventos de click a las imágenes de los proyectos para redirección
     const projectImages = document.querySelectorAll('.project-img');
     projectImages.forEach(image => {
         image.addEventListener('click', function() {
@@ -214,8 +207,6 @@ function updateContent(language) {
         });
     });
 }
-
-// Botón Idiomas
 
 document.addEventListener("DOMContentLoaded", function() {
     const languageButton = document.getElementById('language-button');
@@ -229,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function() {
    languageButton.addEventListener('click', function(event) {
         event.preventDefault();
         dropdown.classList.toggle('show');
-        dropdown.style.width = `${languageButton.offsetWidth}px`; // Ajusta el ancho del desplegable
+        dropdown.style.width = `${languageButton.offsetWidth}px`;
     });
 
     languageLinks.forEach(link => {
@@ -237,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function() {
             e.preventDefault();
             toggleDropdown();
             const selectedLang = this.getAttribute('data-lang');
-            updateContent(selectedLang); // Actualizar contenido según el idioma seleccionado
+            updateContent(selectedLang);
         });
     });
 
@@ -247,22 +238,15 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Inicializar el contenido en español por defecto
     updateContent('es');
 });
 
-// Redirección web
-
 document.addEventListener("DOMContentLoaded", function() {
-    // Seleccionar todas las imágenes de proyecto
     const projectImages = document.querySelectorAll('.project-img');
 
-    // Agregar evento de click a cada imagen
     projectImages.forEach(image => {
         image.addEventListener('click', function() {
-            // Obtener la URL del atributo data-url
             const url = this.getAttribute('data-url');
-            // Redirigir a la URL
             window.location.href = url;
         });
     });

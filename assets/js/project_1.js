@@ -30,14 +30,11 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector('.intro-text p').innerText = translation.introText;
         document.querySelector('.presentation-container iframe').src = translation.slidesSrc;
 
-        // Actualizar botón de idioma
         document.getElementById('language-button').innerText = translation.languageButton;
 
-        // Actualizar pie de página
         document.querySelector('footer p').innerText = translation.footerText;
     }
 
-    // Botón Idiomas
     const languageButton = document.getElementById('language-button');
     const dropdown = document.querySelector('.dropdown');
     const languageLinks = document.querySelectorAll('.lang');
@@ -57,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
             e.preventDefault();
             toggleDropdown();
             const selectedLang = this.getAttribute('data-lang');
-            updateContent(selectedLang); // Actualizar contenido según el idioma seleccionado
+            updateContent(selectedLang);
         });
     });
 
@@ -67,6 +64,5 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Inicializar el contenido en español por defecto
     updateContent('es');
 });

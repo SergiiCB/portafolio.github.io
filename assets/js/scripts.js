@@ -61,7 +61,7 @@ document.querySelectorAll('.lang').forEach(link => {
         const lang = this.getAttribute('data-lang');
         
         document.getElementById('about').querySelector('h2').textContent = translations[lang].about;
-        document.getElementById('about').querySelector('p').innerHTML = translations[lang].briefDescription; // Cambiar a innerHTML
+        document.getElementById('about').querySelector('p').innerHTML = translations[lang].briefDescription;
         document.getElementById('projects').querySelector('h2').textContent = translations[lang].projects;
         document.getElementById('contact').querySelector('h2').textContent = translations[lang].contact;
         
@@ -86,43 +86,34 @@ document.querySelectorAll('.lang').forEach(link => {
     });
 });
 
-// Boton Idiomas
-
 document.addEventListener("DOMContentLoaded", function() {
     const languageButton = document.getElementById('language-button');
     const dropdown = document.querySelector('.dropdown');
     const languageLinks = document.querySelectorAll('.lang');
 
-    // Función para alternar la visibilidad del menú desplegable
     function toggleDropdown() {
         dropdown.classList.toggle('show');
     }
 
-    // Evento para abrir/cerrar el menú al hacer clic en el botón "Idioma"
     languageButton.addEventListener('click', function(event) {
         event.preventDefault();
         dropdown.classList.toggle('show');
         dropdown.style.width = `${languageButton.offsetWidth}px`;
     });
 
-    // Evento para cerrar el menú al seleccionar un idioma
     languageLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             toggleDropdown();
-            // Aquí también puedes agregar la lógica para cambiar el idioma si aún no está implementada
         });
     });
 
-    // Evento para cerrar el menú si se hace clic fuera de él
     document.addEventListener('click', function(e) {
         if (!dropdown.contains(e.target) && !languageButton.contains(e.target)) {
             dropdown.classList.remove('show');
         }
     });
 });
-
-// Carrusel de imagenes
 
 let slideIndex = 0;
 const slides = document.getElementsByClassName("mySlides");
@@ -138,12 +129,12 @@ function showSlides() {
     }
     slides[slideIndex - 1].style.display = "block";
     resetProgressBar();
-    setTimeout(showSlides, 5000); // Imagen cada 5 segundos
+    setTimeout(showSlides, 5000);
 }
 
 function resetProgressBar() {
     progressBar.style.animation = "none";
-    void progressBar.offsetWidth; // Reinicia la animación
+    void progressBar.offsetWidth;
     progressBar.style.animation = "progress 5s linear infinite";
 }
 
@@ -151,18 +142,11 @@ document.addEventListener("DOMContentLoaded", function () {
     showSlides();
 });
 
-// Redirección web
-
 document.addEventListener("DOMContentLoaded", function() {
-    // Seleccionar todas las imágenes de proyecto
     const projectImages = document.querySelectorAll('.project-img');
-
-    // Agregar evento de click a cada imagen
     projectImages.forEach(image => {
         image.addEventListener('click', function() {
-            // Obtener la URL del atributo data-url
             const url = this.getAttribute('data-url');
-            // Redirigir a la URL
             window.location.href = url;
         });
     });
